@@ -15,7 +15,7 @@ https.get('https://jsonplaceholder.typicode.com/users', res => {
     const users = JSON.parse(Buffer.concat(data).toString());
 
     for(user of users) {
-      console.log(`Got user with id: ${user.id}, name: ${user.name}`);
+      console.log(`Got user with id: ${user.id}, name: ${user.name}, email: ${user.email}`);
     }
   });
 }).on('error', err => {
