@@ -11,7 +11,8 @@
     "@playwright/test": "^1.23.1"
   },
   "scripts": {
-    "dev": "./node_modules/http-server/bin/http-server",
+    "dev-win": "node node_modules\\http-server\\bin\\http-server",
+    "dev": "node_modules/http-server/bin/http-server",
     "test": "PLAYWRIGHT_JSON_OUTPUT_NAME=.devmatch/out/results.json npx playwright test  --reporter=dot --reporter=json "
   },
   "repository": {
